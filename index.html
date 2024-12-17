@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eczaneden</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo/logo.png" alt="Eczane Kapında">
+                </a>
+            </div>
+
+            <!-- Arama Kutusu -->
+            <div class="search-box">
+                <input type="text" placeholder="Ürün ara...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Menü ve İkonlar -->
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Bölümü -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sağlığınız İçin En İyi Ürünler</h1>
+            <p>Güvenilir ve hızlı teslimatla, ihtiyaç duyduğunuz ürünler kapınızda!</p>
+            <button>Alışverişe Başla</button>
+        </div>
+    </section>
+
+    <!-- Kategoriler Bölümü -->
+    <section class="categories">
+        <h2>Kategoriler</h2>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="img/1 (2).jpg" alt="Vitaminler">
+                <h3>Vitaminler</h3>
+            </div>
+            <div class="category-card">
+                <img src="img/2 (2).jpg" alt="Cilt Bakımı">
+                <h3>Cilt Bakımı</h3>
+            </div>
+            <div class="category-card">
+                <img src="img/3 (2).jpg" alt="Medikal Ürünler">
+                <h3>Medikal Ürünler</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Eczane Kapında. Tüm hakları saklıdır.</p>
+            <ul class="footer-links">
+                <li><a href="#">Gizlilik Politikası</a></li>
+                <li><a href="#">Kullanım Koşulları</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--SHOP -->
+    <section class="shop-page">
+        <div class="filter-section">
+            <h3>Kategoriler</h3>
+            <ul class="categories-list">
+                <li><input type="checkbox" id="cat1"><label for="cat1">Vitaminler</label></li>
+                <li><input type="checkbox" id="cat2"><label for="cat2">Cilt Bakımı</label></li>
+                <li><input type="checkbox" id="cat3"><label for="cat3">Çocuk Sağlığı</label></li>
+            </ul>
+    
+            <h3>Markalar</h3>
+            <ul class="brands-list">
+                <li><input type="checkbox" id="brand1"><label for="brand1">Bioderma</label></li>
+                <li><input type="checkbox" id="brand2"><label for="brand2">Eczacıbaşı</label></li>
+                <li><input type="checkbox" id="brand3"><label for="brand3">Sebamed</label></li>
+                <li><input type="checkbox" id="brand3"><label for="brand3">Unilever</label></li>
+            </ul>
+        </div>
+    
+        <div class="product-section">
+            <div class="product-card">
+                <img src="img/ilaçlar/bioderma_hijyenik.jpg" alt="Ürün 1">
+                <h3>Bioderma Hijyenik İntim Yıkama Jeli 200 ml </h3>
+                <span class="price">179.90₺</span>
+                <div class="product-actions">
+                    <button class="favorite-btn">♥</button>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <img src="img/ilaçlar/dalin.jpg" alt="Ürün 2">
+                <h3>Dalin</h3>
+                <span class="price">100₺</span>
+                <div class="product-actions">
+                    <button class="favorite-btn">♥</button>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+    
+            <!-- Diğer ürün kartları buraya gelecek -->
+        </div>
+    </section>
+    
+</body>
+</html>
