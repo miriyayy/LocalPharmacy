@@ -311,7 +311,7 @@ footer {
     border-radius: 4px;
     display: none; /* Hidden by default */
     flex-direction: column;
-    width: 150px; /* Set a fixed width */
+    width: 70px; /* Set a fixed width */
     z-index: 1000;
     padding: 0; /* Remove unnecessary padding */
 }
