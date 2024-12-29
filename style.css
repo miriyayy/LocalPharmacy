@@ -49,6 +49,10 @@
     color: #088178;
 }
 
+.nav-links a:active{
+    text-decoration: underline;
+}
+
 /* Arama Kutusu */
 .search-box {
     display: flex;
