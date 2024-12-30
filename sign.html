@@ -12,6 +12,16 @@
     
 </head>
 <body>
+  <div id="navbar"></div>
+    <script>
+        // nav.html dosyasını yükleme
+        fetch('navbar/navprelog.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading nav.html:', error));
+    </script>
     <script type="text/javascript" src="main.js"></script>
 <script>
 function includeHTML() {
@@ -83,7 +93,7 @@ function includeHTML() {
       </div>
     </div>
     <div class="signup">Already have an account?
-      <a href="index.html">Login</a>
+      <a href="log.html">Login</a>
     </div>
   </div>
 </div>

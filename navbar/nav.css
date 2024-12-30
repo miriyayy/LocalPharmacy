@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -13,11 +13,6 @@
     background-color: #f4f4f4;
     padding: 10px 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-/* Menü ve İkonları Yan Yana Hizalama */
-.nav-links, .icons, .search-box {
-    display: flex;
-    align-items: center;
 }
 
 /* Menü ve İkonları Yan Yana Hizalama */
@@ -47,7 +42,7 @@
     color: #088178;
 }
 
-.nav-links a:active{
+.nav-links a:active {
     text-decoration: underline;
 }
 
@@ -79,9 +74,16 @@
 .search-box button i {
     font-size: 16px;
 }
+
+.logo {
+    display: flex; /* Enables flexbox for layout control */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Add space between logos */
+}
+
 .logo img {
     height: 70px; 
-    object-fit: contain;
+    object-fit: contain; 
 }
 /* General Styling */
 .icons {
@@ -90,9 +92,12 @@
     align-items: center;
     gap: 15px; /* Space between icons */
     position: relative;
+    margin: 10px;
 }
 
 .icons a {
     text-decoration: none;
     color: inherit;
+    
 }
+

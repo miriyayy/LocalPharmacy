@@ -1,12 +1,3 @@
-/* Global Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -16,18 +7,12 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Menü ve İkonları Yan Yana Hizalama */
-.nav-links, .icons, .search-box {
-    display: flex;
-    align-items: center;
-}
-
 .nav-links {
-    margin-left: 20px;
+    display: flex;
+    list-style: none;
 }
 
 .nav-links li {
-    list-style: none;
     margin-left: 20px;
 }
 
@@ -43,25 +28,19 @@
     color: #088178;
 }
 
-.nav-links a:active {
-    text-decoration: underline;
-}
-
-/* Arama Kutusu */
 .search-box {
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 20px;
     overflow: hidden;
-    width: 800px;
 }
 
 .search-box input {
     border: none;
     outline: none;
     padding: 8px;
-    width: 100%;
+    width: 200px;
 }
 
 .search-box button {
@@ -74,21 +53,4 @@
 
 .search-box button i {
     font-size: 16px;
-}
-
-/* Özel Butonlar */
-.red-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: white;
-    background-color: red;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s;
-}
-
-.red-button:hover {
-    background-color: darkred;
 }
