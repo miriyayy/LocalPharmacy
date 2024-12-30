@@ -1,0 +1,102 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.red-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .red-button:hover {
+    background-color: darkred;
+  }
+
+/* Menü ve İkonları Yan Yana Hizalama */
+.nav-links, .icons, .search-box {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    margin-left: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #088178;
+}
+
+.nav-links a:active{
+    text-decoration: underline;
+}
+
+/* Arama Kutusu */
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 800px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+}
+
+.search-box button {
+    background-color: #ef4005;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.search-box button i {
+    font-size: 16px;
+}
+.logo img {
+    height: 70px; 
+    object-fit: contain;
+}
+/* General Styling */
+.icons {
+    display: flex;
+    justify-content: center; /* Center-align all icons */
+    align-items: center;
+    gap: 15px; /* Space between icons */
+    position: relative;
+}
+
+.icons a {
+    text-decoration: none;
+    color: inherit;
+}
