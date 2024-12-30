@@ -9,35 +9,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#">
-                    <img src="img/logo/logo.png" alt="Eczane Kapında">
-                </a>
-            </div>
-
-            <!-- Arama Kutusu -->
-            <div class="search-box">
-                <input type="text" placeholder="Search product...">
-                <button><i class="fas fa-search"></i></button>
-            </div>
-
-            <!-- Menü ve İkonlar -->
-            <ul class="nav-links">
-                <li><a class=active href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="category.html">Category</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="logandsign/log.html">Log in</a></li>
-                <li><a href="logandsign/sign.html"class="red-button">Sign up</a></li>
-
-            </ul>
-        </nav>       
-    </header>
-
+    <div id="navbar"></div>
+    <script>
+        // nav.html dosyasını yükleme
+        fetch('navbar/navprelog.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading nav.html:', error));
+    </script>
     <!-- Hero Bölümü -->
     <section class="hero">
         <div class="hero-content">

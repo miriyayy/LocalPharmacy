@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -13,11 +14,6 @@
     background-color: #f4f4f4;
     padding: 10px 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-/* Menü ve İkonları Yan Yana Hizalama */
-.nav-links, .icons, .search-box {
-    display: flex;
-    align-items: center;
 }
 
 /* Menü ve İkonları Yan Yana Hizalama */
@@ -47,7 +43,7 @@
     color: #088178;
 }
 
-.nav-links a:active{
+.nav-links a:active {
     text-decoration: underline;
 }
 
@@ -79,20 +75,20 @@
 .search-box button i {
     font-size: 16px;
 }
-.logo img {
-    height: 70px; 
-    object-fit: contain;
-}
-/* General Styling */
-.icons {
-    display: flex;
-    justify-content: center; /* Center-align all icons */
-    align-items: center;
-    gap: 15px; /* Space between icons */
-    position: relative;
+
+/* Özel Butonlar */
+.red-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
 }
 
-.icons a {
-    text-decoration: none;
-    color: inherit;
+.red-button:hover {
+    background-color: darkred;
 }
