@@ -1,4 +1,4 @@
 # EczaneKapinda 
-log sign da nav a bi karanlık çöküyo ona bi el atın
-senanın attıklarına bakmadım
+log sign da insta ile giriş yapı sildim 
+logandsign/style.css dosyasındaki ufak hatayı düzelttim
 -cem
