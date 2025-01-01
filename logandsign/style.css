@@ -152,14 +152,12 @@ i span {
 }
 .signup a:hover {
   text-decoration: underline;
-}
-
-        
+}        
       
-
-      @media (max-width: 500px)
-#main-footer {
+@media (max-width: 500px) {
+  #main-footer {
     height: 7rem;
+  }
 }
 
 #main-footer {
