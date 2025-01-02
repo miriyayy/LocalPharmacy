@@ -1,0 +1,196 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Başlık */
+header {
+    background-color: mediumorchid;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Ana Konteyner */
+.container {
+    display: flex;
+    margin: 20px;
+}
+/* Filtreleme Paneli */
+aside.filters {
+    width: 250px; /* Genişlik artırıldı */
+   
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Ürünlerden uzaklaştırma */
+}
+
+
+.filters {
+    width: 250px; /* Filtre alanı için sabit genişlik */
+    min-width: 250px; /* Minimum genişlik ayarı */
+    max-width: 250px; /* Maksimum genişlik ayarı */
+  }
+  
+
+aside.filters h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+aside.filters h3 {
+    font-size: 18px;
+    margin: 20px 0 10px;
+}
+
+aside.filters ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+aside.filters ul li {
+    margin: 10px 0;
+}
+
+aside.filters ul li label {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+aside.filters input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+aside.filters input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+aside.filters button {
+    background-color: mediumorchid;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+aside.filters button:hover {
+    background-color: rgb(143, 57, 165);
+}
+
+/* Ürün Kartları */
+main.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    margin: 5px 0;
+}
+
+.price {
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+
+nav a.active {
+    color: mediumorchid;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Yatay yerine dikey düzen */
+    }
+    aside.filters {
+        width: 100%; /* Küçük ekranlarda tam genişlik */
+        margin-right: 0; /* Sağdan boşluk kaldırılıyor */
+    }
+}
+
+
+.product-image {
+    width: 200px; /* Sabit genişlik */
+    height: 200px; /* Sabit yükseklik */
+    object-fit: cover; /* Resmin alanı doldurmasını sağlar */
+    border-radius: 10px; /* Köşeleri hafif yuvarlamak için (isteğe bağlı) */
+  }
+  
