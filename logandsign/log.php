@@ -96,7 +96,7 @@ includeHTML();
 <footer id="main-footer">
     <div class="footer-content container">
         <p>
-            Copyright &copy; 2021 All Rights Reserved
+            EczaneKapında &copy; 2024 All Rights Reserved
         </p>
         <div class="social">
             <a href="https://github.com/jagadeeshpj" target="__blank"  style="color: #fff;">
