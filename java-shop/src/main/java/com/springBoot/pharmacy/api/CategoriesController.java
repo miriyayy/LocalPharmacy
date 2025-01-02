@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.springBoot.pharmacy.business.abstracts.CategoryService;
 import com.springBoot.pharmacy.entities.Category;
+
 @CrossOrigin
 @RestController
 @RequestMapping("/api/categories")
