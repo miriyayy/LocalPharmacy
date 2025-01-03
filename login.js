@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       if (response.ok) {
         alert("Login successful!");
-        window.location.href = "index.html"; // Yönlendirme
+        window.location.href = "indexafterlog.html"; // Yönlendirme
       } else {
         alert("Invalid credentials!");
       }
