@@ -1,23 +1,13 @@
 
 body {
     margin: 0;
-<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
-    background-color: #ff0000;
+    background-color: #222;
     color: #ffffff;
 }
 
 
 
-=======
-    background-color: #f9f9f9;
-    color: #333;
-
-}
-
-
-/* Başlık */
->>>>>>> 32dbe5784ed98324246e0fb5642acbbf85f84698
 header {
     background-color: #002147;
     padding: 20px 20px; /* Yüksekliği artırıldı */
@@ -27,7 +17,6 @@ header {
 }
 
 /* Navbar */
-
 nav {
     display: flex;
     justify-content: center;
