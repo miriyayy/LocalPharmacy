@@ -65,35 +65,37 @@ categoryLinks.forEach(link => {
     });
 });
 
-// Fiyat aralığı filtreleme
-const filterCheckboxes = document.querySelectorAll('aside.filters input[type="checkbox"]');
+// Filtreleme fonksiyonları
 const minPriceInput = document.getElementById("min-price");
 const maxPriceInput = document.getElementById("max-price");
 const applyFiltersButton = document.getElementById("apply-filters");
 
 applyFiltersButton.addEventListener("click", () => {
-    const minPrice = parseFloat(minPriceInput.value) || 0; // Boşsa 0 al
-    const maxPrice = parseFloat(maxPriceInput.value) || Infinity; // Boşsa sonsuz al
+    const minPrice = parseFloat(minPriceInput.value) || 0; // Eğer boşsa 0 kullan
+    const maxPrice = parseFloat(maxPriceInput.value) || Number.MAX_VALUE; // Eğer boşsa sonsuz kullan
 
     const filteredProducts = allProducts.filter(product => 
         product.unitPrice >= minPrice && product.unitPrice <= maxPrice
     );
-
-    displayProducts(filteredProducts); // Filtrelenen ürünleri göster
+    displayProducts(filteredProducts);
 });
 
-filterCheckboxes.forEach(checkbox => {
+// Select Price Range filtresini ekleme
+const priceRangeCheckboxes = document.querySelectorAll(".form-check-input");
+
+priceRangeCheckboxes.forEach(checkbox => {
     checkbox.addEventListener("change", () => {
-        const selectedPrices = Array.from(filterCheckboxes)
-            .filter(checkbox => checkbox.checked)
-            .map(checkbox => checkbox.value.split("-").map(Number)); // "100-200" => [100, 200]
+        const selectedRanges = Array.from(priceRangeCheckboxes)
+            .filter(cb => cb.checked)
+            .map(cb => cb.nextElementSibling.textContent.trim());
 
         const filteredProducts = allProducts.filter(product => {
-            return selectedPrices.some(([min, max]) => 
-                product.unitPrice >= min && product.unitPrice <= max
-            );
+            return selectedRanges.some(range => {
+                const [min, max] = range.split("-").map(Number);
+                return product.unitPrice >= min && product.unitPrice <= max;
+            });
         });
 
-        displayProducts(filteredProducts); // Filtrelenen ürünleri göster
+        displayProducts(filteredProducts);
     });
 });
