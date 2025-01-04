@@ -1,0 +1,137 @@
+/* Blog Header */
+.blog-header {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.blog-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+/* Blog Categories */
+.blog-categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.category-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Blog Grid */
+.product-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product-image {
+    width: 100px; /* Görsel genişliği */
+    height: auto; /* Görsel oranını koruma */
+    margin-right: 15px; /* Görsel ile metin arasında boşluk */
+}
+
+.product-section p {
+    flex: 1; /* Yazının kalan alanı kaplamasını sağlar */
+    margin: 0;
+    font-size: 0.9rem; /* Yazı boyutunu ayarlayın */
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden; /* Taşmaları engeller */
+}
+
+.blog-image {
+    width: 100%; /* Görselin genişliği kartın genişliğine uyar */
+    height: auto; /* Oranı koruyarak yüksekliği ayarlar */
+    max-height: 300px; /* Görselin maksimum yüksekliğini sınırlar */
+    object-fit: cover; /* Görselin boyutlandırılmasını düzenler */
+}
+
+
+.blog-details {
+    padding: 15px;
+}
+
+.blog-details h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.blog-details p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.read-more {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.blog-footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
