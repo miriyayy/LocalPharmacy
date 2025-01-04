@@ -112,6 +112,7 @@ header h1 {
   margin: 0;
   font-size: 24px;
   color: #ccc;
+  padding-left: 50px;
 }
 
 header .search {
@@ -130,7 +131,8 @@ header .search input {
 
 header .auth {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  padding-right: 50px;
 }
 
 header .auth a {
@@ -7563,6 +7565,8 @@ textarea.form-control-lg {
 .m-0 {
   margin: 0 !important;
 }
+
+
 
 .m-1 {
   margin: 0.25rem !important;

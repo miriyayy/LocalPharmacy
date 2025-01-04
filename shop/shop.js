@@ -99,3 +99,21 @@ priceRangeCheckboxes.forEach(checkbox => {
         displayProducts(filteredProducts);
     });
 });
+
+
+
+// Arama kutusunu seç
+const searchInput = document.querySelector(".search input");
+
+// Arama fonksiyonunu ekle
+searchInput.addEventListener("input", () => {
+    const searchTerm = searchInput.value.trim().toLowerCase(); // Girilen metni al ve küçük harfe çevir
+
+    // Ürünleri filtrele
+    const filteredProducts = allProducts.filter(product => 
+        product.productName.toLowerCase().includes(searchTerm) // Ürün ismini kontrol et
+    );
+
+    // Filtrelenmiş ürünleri göster
+    displayProducts(filteredProducts);
+});
