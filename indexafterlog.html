@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eczaneden</title>
-    <link rel="stylesheet" href="indexcss.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Eczane Kapında</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="indexcss.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div id="navbar"></div>
+    <!-- Navigation-->
+
     <header>
         <h1>Eczane Kapında</h1>
         <div class="search">
             <input type="text" placeholder="Search product">
         </div>
         <div class="auth">
-            <a href="/EczaneKapinda/index.html">Home</a>
-            <a href="/EczaneKapinda/indexafterlog.html">Log Out</a>
             <a href="shop/shop.html">Shop</a>
+            <a href="log.html">Log In</a>
+            <a href="sign.html">Sign Up</a>
+
         </div>
     </header>
     <nav>
@@ -27,235 +36,353 @@
         <a href="shop/shop.html">Vitamins and Supplements</a>
         <a href="shop/shop.html">Skincare</a>
         <a href="shop/shop.html">Antibiotics</a>
-        <a href="shop/">Cold and Flu</a>
+        <a href="shop/shop.html">Cold and Flu</a>
         <a href="shop/shop.html">Baby Care</a>
     </nav>
-    <!-- Hero Bölümü -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="img/pharmacy4.jpg"  alt="Ana Sayfa">
-            <p>With reliable and fast delivery, the products you need are at your door!</p>
-            <a href="shop.html">
-                <button>Shop Now</button>
-            </a>
-        </div>
-    </section>
+    <!-- Section-->
+    <section class="py-5">
+        <h2 class="h2">Best Selling Products</h2>
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/him/him50116/l/13.jpg"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Baby Lotion</h5>
+                                <!-- Product price-->
+                                100₺
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://cdn.dsmcdn.com/mnresize/600/-/ty288/product/media/images/20220108/16/23384858/353863642/1/1_org_zoom.jpg"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Balen Vitamin C</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">300₺</span>
+                                250₺
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://cdn.cimri.io/image/1200x1200/venatura-vitamin-b6-p-5-p-30-kapsul_698605481.jpg"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Venatura Vitamin A</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">300₺</span>
+                                220₺
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81XRShv2tmL.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Face Mask</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                150₺
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Kategoriler Bölümü -->
-    <section class="categories">
-        <h2>Categories</h2>
-        <div class="category-container">
-            <div class="category-card">
-                <img src="img/Medicines.png" alt="Medicines">
-                <h3>Medicines</h3>
-            </div>
-            <div class="category-card">
-                <img src="img/Skin Care.png" alt="Skin Care">
-                <h3>Skin Care</h3>
-            </div>
-            <div class="category-card">
-                <img src="img/Vitamins and Supplements.png" alt="Vitamins and Supplements">
-                <h3>Vitamins and Supplements</h3>
-            </div>
-            <div class="category-card">
-                <img src="img/Children's Health.png"  alt="Baby's Health">
-                <h3>Baby's Health</h3>
-            </div>
-        </div>
-    </section>
-
-    
-    <!-- SHOP -->
-    <section class="shop-page">
-        <div class="filter-section">
-            <h3> <img src="img/menü.png" alt="Bonus Card" height="20" width="25"> Filter</h3>
-            <br>
-            <h3>Kategoriler</h3>
-            <ul class="categories-list">
-                <li><input type="checkbox" id="cat1"><label for="cat1">Vitaminler</label></li>
-                <li><input type="checkbox" id="cat2"><label for="cat2">Cilt Bakımı</label></li>
-                <li><input type="checkbox" id="cat3"><label for="cat3">Çocuk Sağlığı</label></li>
-            </ul>
-
-            <h3>Markalar</h3>
-            <ul class="brands-list">
-                <li><input type="checkbox" id="brand1"><label for="brand1">Bioderma</label></li>
-                <li><input type="checkbox" id="brand2"><label for="brand2">Eczacıbaşı</label></li>
-                <li><input type="checkbox" id="brand3"><label for="brand3">Sebamed</label></li>
-                <li><input type="checkbox" id="brand4"><label for="brand4">Unilever</label></li>
-            </ul>
-
-            <h3>Fiyat</h3>
-            <ul class="Fiyat-list">
-                <li><input type="checkbox" id="cat1"><label for="cat1">0₺-150₺</label></li>
-                <li><input type="checkbox" id="cat2"><label for="cat2">150₺-400₺</label></li>
-                <li><input type="checkbox" id="cat3"><label for="cat3">400₺-800₺</label></li>
-                <li><input type="checkbox" id="cat4"><label for="cat3">800₺-1.500₺</label></li>
-                <li><input type="checkbox" id="cat5"><label for="cat3">1.500₺-4.000₺</label></li>
-            </ul>
-            <h3>İndirimdekiler</h3>
-            <ul class="İndirimdekiler">
-            </ul>
-            <h3>Fotoğraflı Yorum</h3>
-            <ul class="Fotoğraflı Yorum">
-            </ul>
-        </div>
-
-        <section class="best-seller">
-            <h2>Best Seller</h2>
-            <div class="product-section">
-                <div class="product-card">
-                    <img src="img/ilaçlar/protein tozu.jpeg" alt="Ürün 1">
-                    <h3>Protein Tozu</h3>
-                    <span class="price">3.000₺</span>
-                    <div class="product-actions">
-                        <button class="favorite-btn">♥</button>
-                        <button class="add-to-cart">Sepete Ekle</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="img/ilaçlar/bioderma_hijyenik.jpg" alt="Ürün 1">
-                    <h3>Yüz Yıkama Jeli 200 ml</h3>
-                    <span class="price">379.99₺</span>
-                    <div class="product-actions">
-                        <button class="favorite-btn">♥</button>
-                        <button class="add-to-cart">Sepete Ekle</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="img/ilaçlar/yüz yıkama jeli.jpeg" alt="Ürün 1">
-                    <h3>Yüz Yıkama Jeli 200 ml</h3>
-                    <span class="price">179.90₺</span>
-                    <div class="product-actions">
-                        <button class="favorite-btn">♥</button>
-                        <button class="add-to-cart">Sepete Ekle</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="img/ilaçlar/kids.jpeg" alt="Ürün 2">
-                    <h3>Redoxon Kids</h3>
-                    <span class="price">280₺</span>
-                    <div class="product-actions">
-                        <button class="favorite-btn">♥</button>
-                        <button class="add-to-cart">Sepete Ekle</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="img/ilaçlar/bebek bezi.jpg" alt="Ürün 3">
-                    <h3>Bebek Bezi</h3>
-                    <span class="price">1.200₺</span>
-                    <div class="product-actions">
-                        <button class="favorite-btn">♥</button>
-                        <button class="add-to-cart">Sepete Ekle</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="img/ilaçlar/dalin.jpg" alt="Ürün 4">
-                    <h3>Dalin</h3>
-                    <span class="price">99.00₺</span>
-                    <div class="product-actions">
-                        <button class="favorite-btn">♥</button>
-                        <button class="add-to-cart">Sepete Ekle</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-   
-    
-        <!-- Feature Section -->
-        <section class="features">
-            <div class="feature">
-                <i class="fas fa-certificate"></i>
-                <h3>ORİJİNAL ÜRÜN</h3>
-                <p>Yetkili Satıcıdan %100 Orijinal Ürün Garantisi</p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-truck"></i>
-                <h3>HIZLI TESLİMAT</h3>
-                <p>Siparişinizden Hemen Sonra Kargo İşlemi Başlatılır</p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-gift"></i>
-                <h3>ÜCRETSİZ KARGO</h3>
-                <p>699 TL ve Üzeri Alışverişlerinizde Kargo Bedava</p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-credit-card"></i>
-                <h3>KAPIDA ÖDEME</h3>
-                <p>Tüm Alışverişlerinizde Kapıda Ödeme Fırsatı</p>
-            </div>
-        </section>
-    
-        <!-- Footer Section -->
-        <footer>
-            <div class="footer-columns">
-                <div class="column">
-                    <h3>Kurumsal</h3>
-                    <ul>
-                        <li><a href="#">Hakkımızda</a></li>
-                        <li><a href="#">İletişim</a></li>
-                        <li><a href="#">Müşteri Hizmetleri</a></li>
-                        <li><a href="#">Havale Bildirim Formu</a></li>
-                        <li><a href="#">Kargom Nerede?</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3>Alışveriş</h3>
-                    <ul>
-                        <li><a href="#">Mesafeli Satış Sözleşmesi</a></li>
-                        <li><a href="#">Gizlilik ve Güvenlik</a></li>
-                        <li><a href="#">İptal ve İade Şartları</a></li>
-                        <li><a href="#">Kişisel Veriler Politikası</a></li>
-                        <li><a href="#">Yardım</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3>Üyelik</h3>
-                    <ul>
-                        <li><a href="#">Hesabım</a></li>
-                        <li><a href="#">Yeni Üyelik</a></li>
-                        <li><a href="#">Üye Girişi</a></li>
-                        <li><a href="#">Şifremi Unuttum</a></li>
-                        <li><a href="#">Sepetiniz</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3>Popüler Kategoriler</h3>
-                    <ul>
-                        <li><a href="#">399 TL'ye Tamamla</a></li>
-                        <li><a href="#">3 Al 2 Öde</a></li>
-                        <li><a href="#">Covid-19</a></li>
-                        <li><a href="#">Outlet</a></li>
-                        <li><a href="#">Güneş Ürünleri</a></li>
-                    </ul>
-                </div>
-            </div>
-    
-            <!-- Newsletter -->
-            <div class="newsletter">
-                <p>E-bülten: Bizden Haberdar Olmak İçin Kaydolun</p>
-                <input type="email" placeholder="E-posta adresiniz" />
-                <button>Gönder</button>
-            </div>
-    
-            <!-- Payment Methods -->
-            
-                <div class="payment-icons">
-                    <img src="img/logo/bonus.jpg" alt="Bonus Card" height="40" width="60">
-                    <img src="img/logo/AXESS_Card.png" alt="Maximum" height="40" width="60">
-                    <img src="img/logo/MasterCard-Logo.png" alt="World Card" height="40" width="60">
-                    <img src="img/logo/Maximum_Logo.jpeg" alt="Bankkart" height="40" width="60">
-                    <img src="img/logo/Paraf_Logo.png" alt="Paraf" height="40" width="60">
-                    <img src="img/logo/Visa_Logo.png" alt="Axess" height="40" width="60">
-                    <img src="img/logo/World_Card_Logo.png" alt="MasterCard" height="40" width="60">
-                    <img src="img/logo/Ziraat_Bankkart.png" alt="Visa" height="40" width="60">
-                </div>
                 
-    
-            <div class="footer-bottom">
-                <p>&copy; 2024 Eczane Kapında. Tüm Hakları Saklıdır.</p>
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://contents.mediadecathlon.com/p2573280/k$a6d2c9489303277ce6f653cf03759c22/sq/8337049.jpg?format=auto&f=800x0" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">WHEY Protein</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">3500₺</span>
+                                3000₺
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://assets.sebamedusa.com/spree/images/1212/large/1152781.jpg?1621079734" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Sebamed Deep Cleaning Foam</h5>
+                                <!-- Product price-->
+                                180₺
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://assets.sebamedusa.com/spree/images/1185/large/6610781.jpg?1621079602" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Sebamed Deep Cleaning Facial Toner</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$20.00</span>
+                                $18.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://cdn.dsmcdn.com/mnresize/400/-/ty1605/prod/QC/20241127/15/068e5ade-d1f2-35d2-9f4d-03e4e8988342/1_org_zoom.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Venatura Iron Supplement</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                $40.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </body>
-    </html>
+        </div>
+    </section>
+    <section class="mySection">
+        <h2 class="h2">Best Categories</h2>
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://missuniverseskincare.com/cdn/shop/files/MissU-Web-Complete-Set.jpg?v=1698261590"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Skincare</h5>
+                                <!-- Product price-->
+                                Prices starting from 100 TL
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">shop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://www.clancymedicalgroup.com/wp-content/uploads/Dietary-Supplement.jpg"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Vitamins and Supplements</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">300₺</span>
+                                250₺
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">shop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://www.keralaflowersgifts.com/productimages/CSCSUUN451_big.jpg"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Baby Care</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">300₺</span>
+                                220₺
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">shop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+                
+
+               
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
