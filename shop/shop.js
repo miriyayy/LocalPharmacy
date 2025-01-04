@@ -31,8 +31,19 @@ function displayProducts(products) {
         `;
         productsContainer.innerHTML += productCard;
     });
-}
 
+    // "Add to Cart" butonlarına tıklama olayı ekle
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+    addToCartButtons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            const selectedProduct = products[index]; // Tıklanan ürünü al
+            let cart = JSON.parse(localStorage.getItem("cart")) || []; // Önceki cart içeriğini al
+            cart.push(selectedProduct); // Yeni ürünü ekle
+            localStorage.setItem("cart", JSON.stringify(cart)); // localStorage'e kaydet
+            window.location.href = "/EczaneKapinda/cart.html"; // Kullanıcıyı cart.html sayfasına yönlendir
+        });
+    });
+}
 
 // Ürünleri API'den al ve göster
 const productService = new ProductService();
@@ -42,8 +53,7 @@ productService.getProducts()
         displayProducts(allProducts); // İlk durumda tüm ürünleri göster
     })
     .catch(error => console.error("Error fetching products:", error));
-
-
+    
 
 
     // Kategorilere olay dinleyicileri ekleme

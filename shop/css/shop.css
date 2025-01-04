@@ -142,11 +142,7 @@ aside.filters input[type="number"] {
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-<<<<<<< HEAD
-    background-color: #ffffff;
-=======
     background-color: #fdfafa;
->>>>>>> 98fc70ac11eeb58a20302e2d443cf2b77ca3ee7d
 }
 
 aside.filters button {
