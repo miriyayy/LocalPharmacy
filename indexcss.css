@@ -142,12 +142,58 @@ header .auth a {
   background-color: #444;
   border-radius: 5px;
 }
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
 
+/* Profile Icon */
+.profile-icon {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
 
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+}
 
+/* Dropdown Items */
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
 
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
 
+/* Dropdown Açılma ve Kapanma */
+#dropdown-toggle {
+  display: none;
+}
 
+/* Tıklandığında Açılma */
+#dropdown-toggle:checked + .dropdown-menu {
+  display: block;
+}
+
+/* Hover Süresince Açık Kalma */
+.dropdown-menu:hover {
+  display: block;
+}
 
 *,
 *::before,
