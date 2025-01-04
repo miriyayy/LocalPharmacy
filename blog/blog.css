@@ -1,4 +1,72 @@
+header {
+    background-color: #002147;
+    padding: 20px 20px; /* Yüksekliği artırıldı */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #002130;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ccc;
+    padding-left: 50px;
+  }
+  
+  header .search {
+    flex: 1;
+    margin: 0 20px;
+    margin-left: 300px;
+  }
+  
+  header .search input {
+    width: 50%;
+    padding: 10px;
+    background-color: #121212;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  header .auth {
+    display: flex;
+    gap: 15px;
+    padding-right: 50px;
+  }
+  
+  header .auth a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #444;
+    border-radius: 5px;
+  }
+  
+
+
 /* Blog Header */
+
+
 .blog-header {
     background-color: #f8f9fa;
     padding: 50px 20px;
