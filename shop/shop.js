@@ -19,6 +19,7 @@ function displayProducts(products) {
         productsContainer.innerHTML = "<p>No products found.</p>";
         return;
     }
+    
     products.forEach(product => {
         const productCard = `
             <div class="product-card">
