@@ -141,7 +141,7 @@ aside.filters input[type="number"] {
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #222;
+    background-color: #fdfafa;
 }
 
 aside.filters button {
