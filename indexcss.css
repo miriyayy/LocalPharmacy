@@ -13,6 +13,96 @@ body {
     color: #4a4a4a;
 }
 
+
+
+
+
+header {
+    background-color: #002147;
+    padding: 20px 20px; /* Yüksekliği artırıldı */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #002130;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ccc;
+}
+
+header .search {
+    flex: 1;
+    margin: 0 20px;
+    margin-left: 300px;
+}
+
+header .search input {
+    width: 50%;
+    padding: 10px;
+    background-color: #121212;
+    border: none;
+    border-radius: 5px;
+}
+
+header .auth {
+    display: flex;
+    gap: 10px;
+}
+
+header .auth a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .features {
     display: flex;
     justify-content: space-around;
@@ -20,10 +110,7 @@ body {
     background-color: #ffffff;
     padding: 40px 20px;
 }
-.categories {
-    text-align: center;
-    color: #6a1b9a;
-}
+
 
 .feature {
     text-align: center;
@@ -263,15 +350,7 @@ footer {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f4f4f4;
-    padding: 10px 40px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+
 
 .red-button {
     display: inline-block;
@@ -289,65 +368,10 @@ footer {
     background-color: darkred;
   }
 
-/* Menü ve İkonları Yan Yana Hizalama */
-.nav-links, .icons, .search-box {
-    display: flex;
-    align-items: center;
-}
 
-.nav-links {
-    margin-left: 20px;
-}
-
-.nav-links li {
-    list-style: none;
-    margin-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #088178;
-}
-
-.nav-links a:active{
-    text-decoration: underline;
-}
 
 /* Arama Kutusu */
-.search-box {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    overflow: hidden;
-    width: 800px;
-}
 
-.search-box input {
-    border: none;
-    outline: none;
-    padding: 8px;
-    width: 100%;
-}
-
-.search-box button {
-    background-color: #ef4005;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-}
-
-.search-box button i {
-    font-size: 16px;
-}
 
 
 /* Hero Bölümü */

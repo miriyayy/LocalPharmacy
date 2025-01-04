@@ -10,15 +10,26 @@
 </head>
 <body>
     <div id="navbar"></div>
-    <script>
-        // nav.html dosyasını yükleme
-        fetch('navbar/nav.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading nav.html:', error));
-    </script>
+    <header>
+        <h1>Eczane Kapında</h1>
+        <div class="search">
+            <input type="text" placeholder="Search product">
+        </div>
+        <div class="auth">
+            <a href="/EczaneKapinda/index.html">Home</a>
+            <a href="/EczaneKapinda/indexafterlog.html">Log Out</a>
+            <a href="shop/shop.html">Shop</a>
+        </div>
+    </header>
+    <nav>
+        <a href="shop/shop.html">All Products</a>
+        <a href="shop/shop.html">Painkiller</a>
+        <a href="shop/shop.html">Vitamins and Supplements</a>
+        <a href="shop/shop.html">Skincare</a>
+        <a href="shop/shop.html">Antibiotics</a>
+        <a href="shop/">Cold and Flu</a>
+        <a href="shop/shop.html">Baby Care</a>
+    </nav>
     <!-- Hero Bölümü -->
     <section class="hero">
         <div class="hero-content">

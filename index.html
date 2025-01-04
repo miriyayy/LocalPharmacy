@@ -7,18 +7,32 @@
     <link rel="stylesheet" href="indexcss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   
 </head>
 <body>
-    <div id="navbar"></div>
-    <script>
-        // nav.html dosyasını yükleme
-        fetch('navbar/navprelog.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading nav.html:', error));
-    </script>
+   
+    <header>
+        <h1>Eczane Kapında</h1>
+        <div class="search">
+            <input type="text" placeholder="Search product">
+        </div>
+        <div class="auth">
+            <a href="shop/shop.html">Shop</a>
+            <a href="log.html">Log In</a>
+            <a href="sign.html">Sign Up</a>
+           
+        </div>
+    </header>
+    <nav>
+        <a href="shop/shop.html">All Products</a>
+        <a href="shop/shop.html">Painkiller</a>
+        <a href="shop/shop.html">Vitamins and Supplements</a>
+        <a href="shop/shop.html">Skincare</a>
+        <a href="shop/shop.html">Antibiotics</a>
+        <a href="shop/shop.html">Cold and Flu</a>
+        <a href="shop/shop.html">Baby Care</a>
+    </nav>
+    
     <!-- Hero Bölümü -->
     <section class="hero">
         <div class="hero-content">
@@ -222,5 +236,7 @@
                 <p>&copy; 2024 Eczane Kapında. Tüm Hakları Saklıdır.</p>
             </div>
         </footer>
+        <script src="index.js"></script>
+    
     </body>
     </html>
